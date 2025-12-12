@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f2ecec;
+    background: beige;
     margin: 0;
     padding: 20px;
     justify-content: center; 
@@ -18,7 +18,7 @@ h1 {
 }
 
 .form-area, .lista-area {
-    background: rgb(240, 176, 47);
+    background: rgb(158, 116, 85);
     padding: 20px;
     border-radius: 10px;
     width: 45%;
