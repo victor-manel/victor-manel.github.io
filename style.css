@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: beige;
+    background: rgb(207, 249, 255);
     margin: 0;
     padding: 20px;
     justify-content: center; 
@@ -17,11 +17,12 @@ h1 {
   
 }
 
-.form-area, .lista-area {
-    background: rgb(158, 116, 85);
+.form-area, .list-area {
+    background: rgb(0, 200, 255);
     padding: 20px;
     border-radius: 10px;
     width: 45%;
+    
 }
 
 form label {
