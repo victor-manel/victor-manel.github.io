@@ -1,40 +1,52 @@
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+        justify-content: center;
+    }
+
+    h1 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
 
     .container {
         flex-direction: column; 
-        gap: 20px;
+        width: 200px;
+         justify-content: center;
     }
 
     .form-area,
     .list-area {
-        width: 100%; 
+        
+       align-content: center; 
+       border-radius: 10px;
+      width: 45%;   
+       
     }
 
-    h1 {
-        font-size: 22px;
+    input, select, button {
+        font-size: 14px;
+        padding: 10px;
     }
 
-    h2 {
-        font-size: 18px;
+    table {
+        font-size: 6px;
     }
-    th {
-        font-size: 8px;
-    }
-    input, button {
-        font-size: 16px;
-    }
-} 
+}
 
 body {
-    font-family: Arial, sans-serif;
-    background: rgb(207, 249, 255);
+    font-family: system-ui, 'Segoe UI',  'Open Sans', 'Helvetica Neue', sans-serif,Arial, sans-serif;
     margin: 0;
     padding: 20px;
     justify-content: center; 
+    background-image: url("fundo msc.jpg");
+     background-position: center;
 }
 
 h1 {
     text-align: center;
+    margin-top: 100px;
 }
 
 .container {
@@ -45,7 +57,7 @@ h1 {
 }
 
 .form-area, .list-area {
-    background: rgb(0, 200, 255);
+    background-color: rgb(193, 225, 193);
     padding: 20px;
     border-radius: 10px;
     width: 45%;
@@ -53,7 +65,7 @@ h1 {
     
 }
 
-form label {
+form, label ,table {
     display: block;
     margin-top: 10px;
     justify-content: center; 

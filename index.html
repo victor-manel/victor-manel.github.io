@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <h1>Gestão de Instrumentos Musicais</h1>
+    <h1>🎶 GESTÃO DE INSTRUMENTOS MUSICAIS 🎶</h1>
 
     <div class="container">
 
@@ -17,7 +17,7 @@
 
             <form id="instrumentoForm">
 
-                <label>Nome:</label>
+                <label>Instrumento:</label>
                 <input type="text" id="nome">
 
                 <label>Categoria:</label>
@@ -30,10 +30,16 @@
                 <input type="number" id="ano">
 
                 <label>Estado:</label>
-                <input type="text" id="estado">
+            <select name="estado">
+                <option value="">Ótimo</option>
+                <option value="xbox">Bom</option>
+                <option value="ps5">Rasuavel</option>
+                <option value="nsw">Ruim</option>
+                <option value="pcg">Horrivel</option>
+            </select>
 
-                <button type="submit" id="btnAdicionar">Adicionar</button>
-                <button type="button" id="btnAtualizar">Atualizar</button>
+                <button type="submit" id="btnAdicionar">Adicionar/Atualizar</button>
+            
 
             </form>
         </section>
@@ -43,12 +49,12 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Nome/</th>
-                        <th>Categoria/</th>
-                        <th>Marca/</th>
-                        <th>Ano/</th>
-                        <th>Estado/</th>
-                        <th>Ações:</th>
+                        <th>Nome </th>
+                        <th>Categoria </th>
+                        <th>Marca </th>
+                        <th>Ano </th>
+                        <th>Estado </th>
+                    
                     </tr>
                 </thead>
                 <tbody id="listaInstrumentos">
