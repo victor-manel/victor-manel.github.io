@@ -49,11 +49,11 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Nome </th>
-                        <th>Categoria </th>
-                        <th>Marca </th>
-                        <th>Ano </th>
-                        <th>Estado </th>
+                        <th>Nome/ </th>
+                        <th> Categoria/ </th>
+                        <th> Marca/ </th>
+                        <th> Ano/ </th>
+                        <th> Estado </th>
                     
                     </tr>
                 </thead>
@@ -67,3 +67,42 @@
 
 </body>
 </html>
+
+<script>
+    const form = document.getElementById('instrumentoForm');
+    const tabela = document.getElementById('listaInstrumentos');
+
+    form.addEventListener('submit', function(event) {
+        // Impede que a página recarregue ao clicar no botão
+        event.preventDefault();
+
+        // Captura os valor da ctabela
+        const nome = document.getElementById('nome').value;
+        const categoria = document.getElementById('categoria').value;
+        const marca = document.getElementById('marca').value;
+        const ano = document.getElementById('ano').value;
+        
+        // pega o texto selecionado no <select> (Estado)
+        const selectEstado = document.querySelector('select[name="estado"]');
+        const estado = selectEstado.options[selectEstado.selectedIndex].text;
+
+        // avisa pra preencher as linhas vazias
+        if (nome === '' || categoria === '') {
+            alert("Por favor, preencha o nome e a categoria.");
+            return;
+        }
+
+        // Cria uma nova linha (tr) no corpo da tabela
+        const novaLinha = tabela.insertRow();
+
+        // Insere as células (td) com os valores
+        novaLinha.insertCell(0).innerText = nome;
+        novaLinha.insertCell(1).innerText = categoria;
+        novaLinha.insertCell(2).innerText = marca;
+        novaLinha.insertCell(3).innerText = ano;
+        novaLinha.insertCell(4).innerText = estado;
+
+        // Limpa o formulário após adicionar
+        form.reset();
+    });
+</script>
