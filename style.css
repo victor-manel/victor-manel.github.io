@@ -11,8 +11,10 @@
         font-size: 30px; 
         text-align: center;
         color: rgb(193, 225, 193); 
-       -webkit-text-stroke-width: 1.5px; 
+       -webkit-text-stroke-width: 1px; 
        -webkit-text-stroke-color: #000000;
+       background:rgba(255, 255, 255, 0.5) ;
+      
  
      
     }
