@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <h1>🎶 GESTÃO DE 🎶<br> INSTRUMENTOS MUSICAIS </h1>
 
     <div class="container">
@@ -43,16 +42,16 @@
 
             </form>
         </section>
-        <section class="list-area">
+        <section class="list-area"> 
             <h2>Lista de Instrumentos</h2>
 
             <table>
                 <thead>
                     <tr>
-                        <th>Nome/ </th>
-                        <th> Categoria/ </th>
-                        <th> Marca/ </th>
-                        <th> Ano/ </th>
+                        <th>Nome | </th>
+                        <th> Categoria | </th>
+                        <th> Marca | </th>
+                        <th> Ano | </th>
                         <th> Estado </th>
                     
                     </tr>
@@ -69,6 +68,7 @@
 </html>
 
 <script>
+    // guarda oq tem no formulario
     const form = document.getElementById('instrumentoForm');
     const tabela = document.getElementById('listaInstrumentos');
 
@@ -87,8 +87,8 @@
         const estado = selectEstado.options[selectEstado.selectedIndex].text;
 
         // avisa pra preencher as linhas vazias
-        if (nome === '' || categoria === '') {
-            alert("Por favor, preencha o nome e a categoria.");
+        if (nome === '' || categoria === '' || marca ===''|| ano === '') {
+            alert("Por favor, preencha todos os campos.");
             return;
         }
 
